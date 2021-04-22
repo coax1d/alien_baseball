@@ -9,7 +9,7 @@ namespace foreign_life {
 
         public:
             Alien() = default;
-            void print_type() override;
+            void print_type() const override;
             void set_type(int type) override;
 
         private:

@@ -6,7 +6,7 @@ class BaseballPlayer : public Human {
         BaseballPlayer() = default;
         explicit BaseballPlayer(std::string a_name);
 
-        bool has_baseball();
+        bool has_baseball() const;
         void catch_baseball();
         void throw_baseball(BaseballPlayer &catch_partner);
 

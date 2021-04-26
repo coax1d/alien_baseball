@@ -1,3 +1,6 @@
+#ifndef ALIENBASEBALL_ALIEN_H_
+#define ALIENBASEBALL_ALIEN_H_
+
 #include "Entity.h"
 
 #define DEFAULT_ALIEN_TYPE 1
@@ -17,3 +20,5 @@ namespace foreign_life {
 
     };
 }
+
+#endif // ALIENBASEBALL_ALIEN_H_

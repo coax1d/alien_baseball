@@ -10,6 +10,7 @@ class Human : public Entity {
     public:
         Human() = default;
         explicit Human(std::string a_name);
+        ~Human();
 
         void print_type() const override;
         void set_type(int type) override;

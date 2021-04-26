@@ -8,7 +8,7 @@ class BaseballPlayer::BaseballPlayerImpl : public Human {
     public:
         BaseballPlayerImpl() = default;
         explicit BaseballPlayerImpl(std::string a_name);
-        ~BaseballPlayerImpl() = default;
+        ~BaseballPlayerImpl();
 
         bool has_baseball() const;
         void catch_baseball();

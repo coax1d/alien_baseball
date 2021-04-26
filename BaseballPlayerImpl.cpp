@@ -6,6 +6,8 @@ BaseballPlayer::BaseballPlayerImpl::BaseballPlayerImpl(std::string a_name) :
     Human(std::move(a_name))
 {}
 
+BaseballPlayer::BaseballPlayerImpl::~BaseballPlayerImpl() {}
+
 bool BaseballPlayer::BaseballPlayerImpl::has_baseball() const {
     return this->baseball;
 }

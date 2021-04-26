@@ -7,6 +7,8 @@ BaseballPlayer::BaseballPlayer(std::string a_name) :
     pImpl_{new BaseballPlayerImpl{std::move(a_name)}}
 {}
 
+BaseballPlayer::~BaseballPlayer() {}
+
 bool BaseballPlayer::has_baseball() const {
     return pImpl_->has_baseball();
 }

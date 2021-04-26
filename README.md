@@ -10,6 +10,7 @@ Edited currently by Andrew Burger and Michael Cook
 	- Mutex
 	- Makefile creation
 	- Namespaces
+	- Timer
 	- Template Class(In progress)
 	- Smart Pointers(In progress)
 	- Queue(In Progress)

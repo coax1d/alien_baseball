@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Entity.h"
 
 #define DEFAULT_ALIEN_TYPE 1

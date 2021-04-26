@@ -1,5 +1,4 @@
-#ifndef ALIENBASEBALL_HUMAN_H_
-#define ALIENBASEBALL_HUMAN_H_
+#pragma once
 
 #include "Entity.h"
 #include <string>
@@ -22,5 +21,3 @@ class Human : public Entity {
         int type = DEFAULT_HUMAN_TYPE;
         std::string name;
 };
-
-#endif // ALIENBASEBALL_HUMAN_H_

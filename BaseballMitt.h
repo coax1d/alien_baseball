@@ -1,5 +1,4 @@
-#ifndef ALIENBASEBALL_BASEBALLMITT_H_
-#define ALIENBASEBALL_BASEBALLMITT_H_
+#pragma once
 
 #include "Entity.h"
 #include <string>
@@ -21,5 +20,3 @@ class BaseballMitt: Entity {
             int type = 0;
             std::string color;
 };
-
-#endif // ALIENBASEBALL_BASEBALLMITT_H_

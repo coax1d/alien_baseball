@@ -1,5 +1,4 @@
-#ifndef ALIENBASEBALL_BASEBALLPLAYER_H_
-#define ALIENBASEBALL_BASEBALLPLAYER_H_
+#pragma once
 
 #include "Human.h"
 
@@ -18,5 +17,3 @@ class BaseballPlayer : public Human {
         std::string name;
         bool baseball = false;
 };
-
-#endif // ALIENBASEBALL_BASEBALLPLAYER_H_

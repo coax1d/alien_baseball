@@ -1,5 +1,4 @@
-#ifndef ALIENBASEBALL_ALIEN_H_
-#define ALIENBASEBALL_ALIEN_H_
+#pragma once
 
 #include "Entity.h"
 
@@ -20,5 +19,3 @@ namespace foreign_life {
 
     };
 }
-
-#endif // ALIENBASEBALL_ALIEN_H_

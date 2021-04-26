@@ -16,7 +16,6 @@ class BaseballPlayer::BaseballPlayerImpl : public Human {
 
     private:
         int type = DEFAULT_HUMAN_TYPE;
-        std::string name;
         bool baseball = false;
         BaseballMitt mitt;
 };

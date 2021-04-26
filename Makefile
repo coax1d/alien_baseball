@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -g -std=c++2a
+CXXFLAGS = -Wall -g -std=c++2a -fsanitize=address
 
 default: main
 
@@ -20,4 +20,3 @@ BaseballMitt.o: BaseballMitt.h Entity.h BaseballMitt.cpp
 
 clean:
 	$(RM) main *.o *~
-

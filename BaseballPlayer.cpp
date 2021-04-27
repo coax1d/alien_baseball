@@ -2,7 +2,6 @@
 #include "BaseballPlayerImpl.h"
 #include <cassert>
 #include <string>
-#include <iostream>
 
 BaseballPlayer::BaseballPlayer(std::string a_name) :
     pImpl_{new BaseballPlayerImpl{std::move(a_name)}}

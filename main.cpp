@@ -65,7 +65,13 @@ int main(void) {
     BaseballPlayer player1("Andrew");
     BaseballPlayer player2("Michael");
 
-    play_catch(player1, player2);
+    std::cout << "Hey player1 is " << player1.get_name() << std::endl;
+    std::cout << "Hey player1 has baseball? " << player1.has_baseball() << std::endl;
+
+    player1.set_name("Andrew");
+    std::cout << "Hey player1 is " << player1.get_name() << std::endl;
+
+    // play_catch(player1, player2);
 
     return 0;
 }

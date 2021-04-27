@@ -5,6 +5,8 @@ Human::Human(std::string a_name) :
     name{std::move(a_name)}
 {}
 
+Human::~Human() {}
+
 void Human::print_type() const {
     std::cout << "Human Type is " << this->type << std::endl;
 }

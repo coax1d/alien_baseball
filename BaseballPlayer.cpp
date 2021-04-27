@@ -9,6 +9,10 @@ BaseballPlayer::BaseballPlayer(std::string a_name) :
 
 BaseballPlayer::~BaseballPlayer() {}
 
+const std::string& BaseballPlayer::get_name() const {
+    return pImpl_->get_name();
+}
+
 bool BaseballPlayer::has_baseball() const {
     return pImpl_->has_baseball();
 }

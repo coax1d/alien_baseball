@@ -1,6 +1,7 @@
 #include "BaseballPlayerImpl.h"
 #include <cassert>
 #include <string>
+#include <iostream>
 
 BaseballPlayer::BaseballPlayerImpl::BaseballPlayerImpl(std::string a_name) :
     Human(std::move(a_name))

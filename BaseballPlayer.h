@@ -10,6 +10,7 @@ class BaseballPlayer : public Human {
         explicit BaseballPlayer(std::string a_name);
         ~BaseballPlayer();
 
+        const std::string& get_name() const;
         bool has_baseball() const;
         void catch_baseball();
         void throw_baseball(BaseballPlayer &catch_partner);

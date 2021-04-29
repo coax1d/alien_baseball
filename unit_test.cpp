@@ -8,9 +8,6 @@
 #include <iostream>
 #include <assert.h>
 
-#undef NDEBUG
-
-#ifndef NDEBUG
 #   define ASSERT(condition, message) \
     do { \
         if (! (condition)) { \
@@ -19,9 +16,6 @@
             std::terminate(); \
         } \
     } while (false)
-#else
-#   define ASSERT(condition, message) do { } while (false)
-#endif
 
 // This is the max values represented by the default_entity_type enum in "Entity.h"
 #define DEFAULT_TYPES_LIMIT 4

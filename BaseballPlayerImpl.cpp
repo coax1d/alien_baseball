@@ -9,7 +9,7 @@ BaseballPlayer::BaseballPlayerImpl::BaseballPlayerImpl(std::string a_name) :
 BaseballPlayer::BaseballPlayerImpl::~BaseballPlayerImpl() {}
 
 bool BaseballPlayer::BaseballPlayerImpl::has_baseball() const {
-    return this->baseball;
+    return baseball;
 }
 
 void BaseballPlayer::BaseballPlayerImpl::catch_baseball() {
@@ -28,5 +28,5 @@ void BaseballPlayer::BaseballPlayerImpl::put_on_mitt(BaseballMitt mitt) {
 }
 
 const BaseballMitt & BaseballPlayer::BaseballPlayerImpl::get_mitt() {
-    return this->mitt;
+    return mitt;
 }

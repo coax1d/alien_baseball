@@ -12,11 +12,11 @@ void foreign_life::Alien::set_type(int type) {
 }
 
 int foreign_life::Alien::get_type() const {
-    return this->type;
+    return type;
 }
 
 const std::string & foreign_life::Alien::get_name() const {
-    return this->name;
+    return name;
 }
 
 void foreign_life::Alien::set_name(std::string name) {

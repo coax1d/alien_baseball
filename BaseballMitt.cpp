@@ -6,7 +6,7 @@ BaseballMitt::BaseballMitt(std::string a_color) :
 {}
 
 int BaseballMitt::get_type() const {
-    return this->type;
+    return type;
 }
 
 void BaseballMitt::set_type(int type) {
@@ -14,7 +14,7 @@ void BaseballMitt::set_type(int type) {
 }
 
 const std::string & BaseballMitt::get_color() const {
-    return this->color;
+    return color;
 }
 
 void BaseballMitt::set_color(std::string color) {

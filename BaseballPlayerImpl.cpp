@@ -22,3 +22,11 @@ void BaseballPlayer::BaseballPlayerImpl::throw_baseball(BaseballPlayer &catch_pa
     this->baseball = false;
     catch_partner.catch_baseball();
 }
+
+void BaseballPlayer::BaseballPlayerImpl::put_on_mitt(BaseballMitt mitt) {
+    this->mitt = std::move(mitt);
+}
+
+const BaseballMitt & BaseballPlayer::BaseballPlayerImpl::get_mitt() {
+    return this->mitt;
+}

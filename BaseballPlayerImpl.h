@@ -13,9 +13,10 @@ class BaseballPlayer::BaseballPlayerImpl : public Human {
         bool has_baseball() const;
         void catch_baseball();
         void throw_baseball(BaseballPlayer &catch_partner);
+        void put_on_mitt(BaseballMitt mitt);
+        const BaseballMitt & get_mitt();
 
     private:
-        int type = DEFAULT_HUMAN_TYPE;
         bool baseball = false;
         BaseballMitt mitt;
 };

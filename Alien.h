@@ -1,9 +1,7 @@
 #pragma once
 
 #include "Entity.h"
-
-#define DEFAULT_ALIEN_TYPE 1
-
+#include <string>
 
 namespace foreign_life {
 
@@ -11,10 +9,17 @@ namespace foreign_life {
 
         public:
             Alien() = default;
-            void print_type() const override;
+            explicit Alien(std::string a_name);
+            ~Alien();
+
+            int get_type() const override;
             void set_type(int type) override;
 
+            const std::string& get_name() const;
+            void set_name(std::string name);
+
         private:
+            std::string name;
             int type = DEFAULT_ALIEN_TYPE;
 
     };

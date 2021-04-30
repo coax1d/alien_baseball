@@ -1,8 +1,9 @@
 #pragma once
 
 #include "Human.h"
-#include "BaseballMitt.h"
 #include <memory>
+
+class BaseballMitt;
 
 class BaseballPlayer : public Human {
 

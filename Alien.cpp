@@ -1,11 +1,24 @@
 #include "Alien.h"
 #include <iostream>
 
+foreign_life::Alien::Alien(std::string a_name) :
+    name{std::move(a_name)}
+{}
+
+foreign_life::Alien::~Alien() {}
+
 void foreign_life::Alien::set_type(int type) {
     this->type = type;
 }
 
-void foreign_life::Alien::print_type() const {
-    std::cout << "Type of alien is " << this->type
-         << std::endl;
+int foreign_life::Alien::get_type() const {
+    return type;
+}
+
+const std::string & foreign_life::Alien::get_name() const {
+    return name;
+}
+
+void foreign_life::Alien::set_name(std::string name) {
+    this->name = std::move(name);
 }

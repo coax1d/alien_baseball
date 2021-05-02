@@ -3,8 +3,6 @@
 #include "Entity.h"
 #include <string>
 
-#define DEFAULT_HUMAN_TYPE 2
-
 class Human : public Entity {
 
     public:
@@ -12,13 +10,13 @@ class Human : public Entity {
         explicit Human(std::string a_name);
         ~Human();
 
-        void print_type() const override;
+        int get_type() const override;
         void set_type(int type) override;
 
         const std::string& get_name() const;
         void set_name(std::string name);
 
     private:
-        int type = DEFAULT_HUMAN_TYPE;
         std::string name;
+        int type = DEFAULT_HUMAN_TYPE;
 };

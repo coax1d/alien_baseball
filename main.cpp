@@ -53,7 +53,7 @@ void play_catch(BaseballPlayer &player1, BaseballPlayer &player2) {
 
     Players p1 = {player1, player2};
     Players p2 = {player2, player1};
-    // Players &p2 = *new Players(player2,player1);
+    // Players &p2 = *new Players(player2,player1); If wanted to declare a player on the heap
 
     std::thread t1(start_play_catch, std::ref(p1), std::ref(baseball_mutex));
     start_play_catch(std::ref(p2), std::ref(baseball_mutex));

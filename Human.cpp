@@ -7,15 +7,15 @@ Human::Human(std::string a_name) :
 
 Human::~Human() {}
 
-void Human::print_type() const {
-    std::cout << "Human Type is " << this->type << std::endl;
+int Human::get_type() const {
+    return this->type;
 }
 
 void Human::set_type(int type) {
     this->type = type;
 }
 
-const std::string& Human::get_name() const {
+const std::string & Human::get_name() const {
     return this->name;
 }
 

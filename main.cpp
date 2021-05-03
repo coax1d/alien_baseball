@@ -1,5 +1,6 @@
 #include "Alien.h"
 #include "BaseballPlayer.h"
+#include "BaseballMitt.h"
 #include <unistd.h>
 #include <thread>
 #include <memory>
@@ -34,8 +35,13 @@ void start_play_catch(Players &players, std::mutex &m) {
 
         if (players.self.has_baseball()) {
 
+            players.self.num_catches++;
+
+            std::cout << "total number of catches is " << players.self.num_catches << std::endl;
+
             throw_timer(); // wind up
             players.self.throw_baseball(players.catch_partner);
+
             std::cout << "ball thrown by " << players.self.get_name()
                       << " to " << players.catch_partner.get_name() << std::endl;
         }

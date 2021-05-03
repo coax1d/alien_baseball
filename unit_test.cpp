@@ -74,6 +74,9 @@ void test_named_obj<BaseballPlayer>(const char name[]) {
     BaseballPlayer b("Michael");
     a.throw_baseball(b);
     ASSERT(b.has_baseball(), "throw_baseball failure");
+
+    // num_catches test
+    ASSERT(++a.num_catches == 1, "static variable num_catches failure");
 }
 
 template <typename T>
@@ -92,6 +95,9 @@ void test_unamed_obj(const char color[]) {
 
     a.set_type(42);
     ASSERT(a.get_type() == 42, "get_type() FAILURE");
+
+    // test static function
+    a.print_maker();
 
 }
 

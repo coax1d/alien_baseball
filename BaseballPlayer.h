@@ -21,6 +21,8 @@ class BaseballPlayer : public Human {
         void put_on_mitt(BaseballMitt mitt);
         const BaseballMitt & get_mitt();
 
+        static inline unsigned num_catches;
+
     private:
         class BaseballPlayerImpl;
         std::unique_ptr<BaseballPlayerImpl> pImpl_;

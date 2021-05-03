@@ -20,3 +20,7 @@ const std::string & BaseballMitt::get_color() const {
 void BaseballMitt::set_color(std::string color) {
     this->color = std::move(color);
 }
+
+void BaseballMitt::print_maker() {
+    std::cout << "Mitt maker is Wilson" << std::endl;
+}

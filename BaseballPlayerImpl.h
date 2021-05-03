@@ -16,6 +16,8 @@ class BaseballPlayer::BaseballPlayerImpl : public Human {
         void put_on_mitt(BaseballMitt mitt);
         const BaseballMitt & get_mitt();
 
+        static inline unsigned num_catches;
+
     private:
         bool baseball = false;
         BaseballMitt mitt;

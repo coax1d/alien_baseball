@@ -15,6 +15,8 @@ class BaseballMitt: Entity {
         void set_color(std::string color);
         const std::string & get_color() const;
 
+        static void print_maker();
+
         private:
             int type = DEFAULT_BASEBALLMITT_TYPE;
             std::string color;

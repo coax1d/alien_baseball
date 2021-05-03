@@ -2,23 +2,23 @@
 #include <iostream>
 
 Human::Human(std::string a_name) :
-    name{std::move(a_name)}
+    name_{std::move(a_name)}
 {}
 
 Human::~Human() {}
 
 int Human::get_type() const {
-    return this->type;
+    return type_;
 }
 
 void Human::set_type(int type) {
-    this->type = type;
+    type_ = type;
 }
 
 const std::string & Human::get_name() const {
-    return this->name;
+    return name_;
 }
 
 void Human::set_name(std::string name) {
-    this->name = std::move(name);
+    name_ = std::move(name);
 }

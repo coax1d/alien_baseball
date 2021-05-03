@@ -35,9 +35,9 @@ void start_play_catch(Players &players, std::mutex &m) {
 
         if (players.self.has_baseball()) {
 
-            players.self.num_catches++;
+            players.self.num_catches_++;
 
-            std::cout << "total number of catches is " << players.self.num_catches << std::endl;
+            std::cout << "total number of catches is " << players.self.num_catches_ << std::endl;
 
             throw_timer(); // wind up
             players.self.throw_baseball(players.catch_partner);

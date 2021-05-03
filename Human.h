@@ -17,6 +17,6 @@ class Human : public Entity {
         void set_name(std::string name);
 
     private:
-        std::string name;
-        int type = DEFAULT_HUMAN_TYPE;
+        std::string name_;
+        int type_ = DEFAULT_HUMAN_TYPE;
 };

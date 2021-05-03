@@ -2,23 +2,23 @@
 #include <iostream>
 
 foreign_life::Alien::Alien(std::string a_name) :
-    name{std::move(a_name)}
+    name_{std::move(a_name)}
 {}
 
 foreign_life::Alien::~Alien() {}
 
 void foreign_life::Alien::set_type(int type) {
-    this->type = type;
+    type_ = type;
 }
 
 int foreign_life::Alien::get_type() const {
-    return type;
+    return type_;
 }
 
 const std::string & foreign_life::Alien::get_name() const {
-    return name;
+    return name_;
 }
 
 void foreign_life::Alien::set_name(std::string name) {
-    this->name = std::move(name);
+    name_ = std::move(name);
 }

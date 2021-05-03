@@ -2,21 +2,25 @@
 #include <iostream>
 
 BaseballMitt::BaseballMitt(std::string a_color) :
-    color(std::move(a_color))
+    color_(std::move(a_color))
 {}
 
 int BaseballMitt::get_type() const {
-    return type;
+    return type_;
 }
 
 void BaseballMitt::set_type(int type) {
-    this->type = type;
+    type_ = type;
 }
 
 const std::string & BaseballMitt::get_color() const {
-    return color;
+    return color_;
 }
 
 void BaseballMitt::set_color(std::string color) {
-    this->color = std::move(color);
+    color_ = std::move(color);
+}
+
+const char * BaseballMitt::get_maker() {
+    return "Wilson";
 }

@@ -19,8 +19,8 @@ namespace foreign_life {
             void set_name(std::string name);
 
         private:
-            std::string name;
-            int type = DEFAULT_ALIEN_TYPE;
+            std::string name_;
+            int type_ = DEFAULT_ALIEN_TYPE;
 
     };
 }

@@ -68,12 +68,15 @@ void test_named_obj<BaseballPlayer>(const char name[]) {
 
     // Catch test
     a.catch_baseball();
-    ASSERT(a.has_baseball(), "catch_baseball() failure");
+    ASSERT(a.has_baseball(), "catch_baseball() FAILURE");
 
     // Throw test
     BaseballPlayer b("Michael");
     a.throw_baseball(b);
-    ASSERT(b.has_baseball(), "throw_baseball failure");
+    ASSERT(b.has_baseball(), "throw_baseball FAILURE");
+
+    // num_catches test
+    ASSERT(++a.num_catches_ == 1, "static variable num_catches FAILURE");
 }
 
 template <typename T>
@@ -92,6 +95,9 @@ void test_unamed_obj(const char color[]) {
 
     a.set_type(42);
     ASSERT(a.get_type() == 42, "get_type() FAILURE");
+
+    // test static function
+    ASSERT(strcmp(a.get_maker(), "Wilson") == 0, "get_maker() FAILURE");
 
 }
 

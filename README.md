@@ -11,6 +11,6 @@ Edited currently by Andrew Burger and Michael Cook
 	- Makefile creation
 	- Namespaces
 	- Timer
-	- Template Class(In progress)
-	- Smart Pointers(In progress)
+	- Templates
+	- Smart Pointers
 	- Queue(In Progress)
